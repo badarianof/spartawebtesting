@@ -16,6 +16,6 @@ public class HomePageSteps {
 
     @Then("the page title is {string}")
     public void thePageTitleIs(String arg0) {
-        MatcherAssert.assertThat(homePage.getTitle().contains("arg0"), Matchers.is(true));
+        MatcherAssert.assertThat(homePage.getTitle().contains(arg0), Matchers.is(true));
     }
 }

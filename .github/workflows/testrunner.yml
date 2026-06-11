@@ -14,6 +14,11 @@ jobs:
           java-version: '21'
       - name: grant perms
         run: chmod +x ./src/test/java/com/spartawebtest/runner/Runner.java
+      - name: Show Java version
+        run: |
+          java -version
+          javac -version
+          mvn -version
       - name: Run tests
         #run: ./src/test/java/com/spartawebtest/runner/Runner.java
         run: mvn clean test -Dcucumber.options="--plugin pretty"

@@ -7,9 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get code
-        uses: actions/checkout@v4
-      - name: Make runner executable
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu'
+          java-version: '25'
+      - name: grant perms
         run: chmod +x ./src/test/java/com/spartawebtest/runner/Runner.java
       - name: Run tests
         run: ./src/test/java/com/spartawebtest/runner/Runner.java

@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="initial pom xml">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/runner/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/homepage.feature" afterDir="false" />
+    <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="added&#10;-steps&#10;-pages&#10;-runner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781170908057</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added&#10;-steps&#10;-pages&#10;-runner">
+      <option name="closed" value="true" />
+      <created>1781179508336</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781179508336</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +191,7 @@
     <MESSAGE value="unversioned files" />
     <MESSAGE value="merged with master" />
     <MESSAGE value="initial pom xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial pom xml" />
+    <MESSAGE value="added&#10;-steps&#10;-pages&#10;-runner" />
+    <option name="LAST_COMMIT_MESSAGE" value="added&#10;-steps&#10;-pages&#10;-runner" />
   </component>
 </project>

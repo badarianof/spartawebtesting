@@ -15,4 +15,5 @@ jobs:
       - name: grant perms
         run: chmod +x ./src/test/java/com/spartawebtest/runner/Runner.java
       - name: Run tests
-        run: ./src/test/java/com/spartawebtest/runner/Runner.java
+        #run: ./src/test/java/com/spartawebtest/runner/Runner.java
+        run: mvn clean test -Dcucumber.options="--plugin pretty"

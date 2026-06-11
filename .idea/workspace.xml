@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="Runner works in IDE">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/testrunner.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testrunner.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="github actions setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +64,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager">
     <configuration name="Feature: homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="7" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
@@ -217,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781186708544</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="github actions setup">
+      <option name="closed" value="true" />
+      <created>1781187152197</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1781187152197</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +237,8 @@
     <MESSAGE value="runner test, no runwith" />
     <MESSAGE value="update" />
     <MESSAGE value="Runner works in IDE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runner works in IDE" />
+    <MESSAGE value="github actions setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="github actions setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

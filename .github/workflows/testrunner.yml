@@ -9,5 +9,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v4
+      - name: Make runner executable
+        run: chmod +x ./src/test/java/com/spartawebtest/runner/Runner.java
       - name: Run tests
         run: ./src/test/java/com/spartawebtest/runner/Runner.java

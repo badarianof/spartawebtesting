@@ -1,0 +1,13 @@
+name: Test Runner
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+      - name: Run tests
+        run: ./src/test/java/com/spartawebtest/runner/Runner.java

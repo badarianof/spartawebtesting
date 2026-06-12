@@ -40,4 +40,9 @@ public class HomePageSteps {
     public void iAmOnThePage(String arg0) {
         MatcherAssert.assertThat(getDriver().getCurrentUrl(),Matchers.is(arg0));
     }
+
+    @And("I click AI Skills Accelerator")
+    public void iClickAISkillsAccelerator() {
+        homePage.clickAISkillsAccelerator();
+    }
 }

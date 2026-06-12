@@ -17,4 +17,5 @@ public class HomePage extends PageObject {
     }
     public void clickServices(){getDriver().findElement(By.buttonText("Services")).click();}
     public void clickCapabilityBuild(){getDriver().findElement(By.buttonText("Capability Build")).click();}
+    public void clickAISkillsAccelerator(){getDriver().findElement(By.buttonText("AI Skills Accelerator")).click();}
 }

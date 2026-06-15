@@ -45,4 +45,16 @@ public class HomePageSteps {
     public void iClickAISkillsAccelerator() {
         homePage.clickAISkillsAccelerator();
     }
+    @And ("I click Become a Spartan")
+    public void iClickBecomeASpartan(){
+        homePage.clickBecomeASpartan();
+    }
+    @And ("I click on Community")
+    public void iClickCommunity(){
+        homePage.clickCommunity();
+    }
+    @And ("I click on Ex-Forces")
+    public void iClickExForces() {
+        homePage.clickExForces();
+    }
 }

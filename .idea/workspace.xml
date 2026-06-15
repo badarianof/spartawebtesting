@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="github actions debugging and new compiler plugin in pom xml">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/exforces.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/serentity.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +54,7 @@
   "keyToString": {
     "Cucumber Java.Feature: AISkillsAccelerator.executor": "Run",
     "Cucumber Java.Feature: capabilitybuild.executor": "Run",
+    "Cucumber Java.Feature: exforces.executor": "Run",
     "Cucumber Java.Feature: homepage.executor": "Run",
     "Cucumber Java.Scenario: AI Skills page functions normally.executor": "Run",
     "Cucumber Java.Scenario: Ex forces page functions normally.executor": "Run",
@@ -325,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781271908828</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="github actions debugging and new compiler plugin in pom xml">
+      <option name="closed" value="true" />
+      <created>1781528292551</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1781528292551</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

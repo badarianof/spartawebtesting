@@ -2,17 +2,22 @@ package com.spartawebtest.pages;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
-import org.openqa.selenium.interactions.Actions;
+import net.serenitybdd.core.pages.WebElementFacade;
 
-@SuppressWarnings("unused")
 @DefaultUrl("https://www.spartaglobal.com/")
 public class HomePage extends PageObject {
-
-    public Boolean isLoaded() {
-        String title = getDriver().getTitle();
-        return title != null && title.contains("Sparta Global");
+    public Boolean isLoaded(){
+        return getDriver().getTitle().contains("Sparta Global");
     }
+    public void clickServices(){getDriver().findElement(By.buttonText("Services")).click();}
+    public void clickCapabilityBuild(){getDriver().findElement(By.buttonText("Capability Build")).click();}
+    public void clickAISkillsAccelerator(){getDriver().findElement(By.buttonText("AI Skills Accelerator")).click();}
+    public void clickBecomeASpartan(){getDriver().findElement(By.buttonText("Become a Spartan")).click();}
+    public void clickCommunity(){getDriver().findElement(By.buttonText("Community")).click();}
+    public void clickExForces(){getDriver().findElement(By.buttonText("Ex-Forces")).click();}
+}
 
     public void clickServices() {
         getDriver().findElement(By.buttonText("Services")).click();

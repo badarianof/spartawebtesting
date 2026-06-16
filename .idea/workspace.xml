@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="github actions debugging and new compiler plugin in pom xml">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/InsightsSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/utils/helpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/capabilitybuild.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/exforces.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/insights.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/serenity.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/serentity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/testrunner.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testrunner.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" afterDir="false" />
@@ -27,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="adam" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,12 +48,12 @@
     &quot;assignee&quot;: &quot;AdamMalschuk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/badarianof/spartawebtesting.git",
-    "accountId": "30607dac-a640-4d13-9526-d1b21631dd70"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/badarianof/spartawebtesting.git&quot;,
+    &quot;accountId&quot;: &quot;00f8ea68-0ba3-4b42-86c6-f1e9b115a7d6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -59,16 +69,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: AISkillsAccelerator.executor": "Run",
-    "Cucumber Java.Feature: CaseStudy.executor": "Run",
     "Cucumber Java.Feature: capabilitybuild.executor": "Run",
     "Cucumber Java.Feature: homepage.executor": "Run",
+    "Cucumber Java.Feature: insights.executor": "Run",
     "Cucumber Java.Scenario: AI Skills page functions normally.executor": "Run",
-    "Cucumber Java.Scenario: I open the Home Page.executor": "Run",
-    "Cucumber Java.Scenario: Search returns matching case studies (Happy Path) (1).executor": "Run",
-    "Cucumber Java.Scenario: Search returns matching case studies (Happy Path).executor": "Run",
-    "Cucumber Java.Scenario: Search returns no results for non-existent terms (Sad Path).executor": "Run",
-    "Cucumber Java.Scenario: Successfully reading the NatWest case study (Happy Path).executor": "Run",
-    "Cucumber Java.Scenario: Verification of Case Study availability and content metrics (Sad Path Guardrails).executor": "Run",
+    "Cucumber Java.Scenario: I open the Home Page.executor": "Debug",
+    "Cucumber Java.Scenario: View Case Studies.executor": "Run",
     "JUnit.Runner.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,24 +82,24 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "kevin",
+    "git-widget-placeholder": "Merging kevin",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Search returns matching case studies (Happy Path) (1)">
-    <configuration name="Scenario: I open the Home Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
+  <component name="RunManager" selected="Cucumber Java.Scenario: View Case Studies">
+    <configuration name="Feature: AISkillsAccelerator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors com.spartawebtest.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^I open the Home Page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^I open the Home Page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: I open the Home Page" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: AISkillsAccelerator" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -105,14 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search returns matching case studies (Happy Path) (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: insights" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CaseStudy/CaseStudy.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/insights.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^Search returns matching case studies \(Happy Path\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Search returns matching case studies \(Happy Path\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search returns matching case studies (Happy Path)" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity" />
+      <option name="SUGGESTED_NAME" value="Feature: insights" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -124,14 +129,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search returns matching case studies (Happy Path)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CaseStudy.feature" />
+    <configuration name="Scenario: AI Skills page functions normally" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors com.spartawebtest.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^Search returns matching case studies \(Happy Path\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Search returns matching case studies \(Happy Path\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search returns matching case studies (Happy Path)" />
+      <option name="NAME_FILTER" value="^AI Skills page functions normally$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^AI Skills page functions normally$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: AI Skills page functions normally" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,14 +149,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search returns no results for non-existent terms (Sad Path)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: View Case Studies" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/CaseStudy.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/insights.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^Search returns no results for non\-existent terms \(Sad Path\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Search returns no results for non\-existent terms \(Sad Path\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search returns no results for non-existent terms (Sad Path)" />
+      <option name="NAME_FILTER" value="^View Case Studies$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^View Case Studies$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: View Case Studies" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -162,44 +168,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Successfully reading the NatWest case study (Happy Path)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^Successfully reading the NatWest case study \(Happy Path\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Successfully reading the NatWest case study \(Happy Path\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Successfully reading the NatWest case study (Happy Path)" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="com.spartawebtest.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.spartawebtest.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.spartawebtest.runner.Runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="spartawebtestingproject" />
       <option name="filePath" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Search returns matching case studies (Happy Path) (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Successfully reading the NatWest case study (Happy Path)" />
-        <item itemvalue="Cucumber Java.Scenario: Search returns no results for non-existent terms (Sad Path)" />
-        <item itemvalue="Cucumber Java.Scenario: Search returns matching case studies (Happy Path)" />
-        <item itemvalue="Cucumber Java.Scenario: I open the Home Page" />
+        <item itemvalue="Cucumber Java.Scenario: View Case Studies" />
+        <item itemvalue="Cucumber Java.Feature: insights" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: AI Skills page functions normally" />
+        <item itemvalue="Cucumber Java.Feature: AISkillsAccelerator" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
       </set>
     </attachedChunks>
   </component>
@@ -331,42 +333,11 @@
       <option name="project" value="LOCAL" />
       <updated>1781190577871</updated>
     </task>
-    <task id="LOCAL-00016" summary="github actions debugging and new compiler plugin in pom xml">
-      <option name="closed" value="true" />
-      <created>1781599353712</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1781599353715</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/adam" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unversioned files" />

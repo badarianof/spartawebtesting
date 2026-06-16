@@ -3,6 +3,8 @@ package com.spartawebtest.steps;
 import com.spartawebtest.pages.HomePage;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
+import com.spartawebtest.pages.InsightsPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,9 +15,12 @@ import org.hamcrest.Matchers;
 import com.spartawebtest.utils.*;
 
 import static net.serenitybdd.core.Serenity.getDriver;
+import io.cucumber.java.en.When;
+import org.junit.jupiter.api.Assertions;
 
 public class HomePageSteps {
     private final HomePage homePage = new HomePage();
+    private final InsightsPage insightsPage = new InsightsPage();
     @Given("I am on the Home Page")
     public void iAmOnTheHomePage() {
         homePage.open();
@@ -24,6 +29,16 @@ public class HomePageSteps {
     @Then("the page title is {string}")
     public void thePageTitleIs(String arg0) {
         MatcherAssert.assertThat(homePage.getTitle().contains(arg0), Matchers.is(true));
+    }
+
+    @When("I type {string} in the search bar")
+    public void iTypeInTheSearchBar(String keyword) {
+        insightsPage.searchForKeyword(keyword);
+    }
+
+    @Then("I see case studies")
+    public void iSeeCaseStudies() {
+        MatcherAssert.assertThat(insightsPage.areSearchResultsVisible().getAccessibleName(),Matchers.containsString("HSBC"));
     }
 
     @And("I click the services tab")

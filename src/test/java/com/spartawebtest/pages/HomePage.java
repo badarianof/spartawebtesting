@@ -1,35 +1,44 @@
 package com.spartawebtest.pages;
 
+import net.serenitybdd.annotations.DefaultUrl;
+import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
-import java.time.Duration;
 
+@SuppressWarnings("unused")
+@DefaultUrl("https://www.spartaglobal.com/")
 public class HomePage extends PageObject {
 
-    public void openHomePage() {
-        getDriver().get("https://www.spartaglobal.com/");
+    public Boolean isLoaded() {
+        String title = getDriver().getTitle();
+        return title != null && title.contains("Sparta Global");
+    }
+
+    public void clickServices() {
+        getDriver().findElement(By.buttonText("Services")).click();
+    }
+
+    public void clickCapabilityBuild() {
+        getDriver().findElement(By.buttonText("Capability Build")).click();
     }
 
     public void hoverOverInsightsHeader() {
-        By cookieButton = By.id("ccc-dismiss-button");
-        if (!getDriver().findElements(cookieButton).isEmpty()) {
-            find(cookieButton).click();
+        org.openqa.selenium.By cookieBtn = org.openqa.selenium.By.id("ccc-dismiss-button");
+        if (!getDriver().findElements(cookieBtn).isEmpty()) {
+            getDriver().findElement(cookieBtn).click();
         }
-
-        By insightsHeader = By.cssSelector("nav a[href*='insights']");
-        find(insightsHeader).withTimeoutOf(Duration.ofSeconds(10)).waitUntilVisible();
+        find(org.openqa.selenium.By.cssSelector("nav a[href*='insights']"))
+                .waitUntilVisible();
         new Actions(getDriver())
-                .moveToElement(getDriver().findElement(insightsHeader))
+                .moveToElement(getDriver().findElement(
+                        org.openqa.selenium.By.cssSelector("nav a[href*='insights']")))
                 .perform();
-
         waitABit(1500);
     }
 
     public void selectInsightsSubsection() {
-        By subMenuLink = By.xpath(
-                "//a[contains(translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'INSIGHTS')]"
-        );
-        find(subMenuLink).withTimeoutOf(Duration.ofSeconds(10)).waitUntilVisible().click();
+        find(org.openqa.selenium.By.xpath(
+                "//a[contains(translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'INSIGHTS')]"
+        )).waitUntilVisible().click();
     }
 }

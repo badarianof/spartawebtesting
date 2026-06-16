@@ -20,19 +20,15 @@ import org.junit.jupiter.api.Assertions;
 
 public class HomePageSteps {
     private final HomePage homePage = new HomePage();
+    private final InsightsPage insightsPage = new InsightsPage();
     @Given("I am on the Home Page")
     public void iAmOnTheHomePage() {
         homePage.open();
     }
 
-    @And("I navigate to the Insights page")
-    public void iNavigateToTheInsightsPage() {
-        homePage.hoverOverInsightsHeader();
-    }
-
-    @And("select subsection called insights")
-    public void selectSubsectionCalledInsights() {
-        homePage.selectInsightsSubsection();
+    @Then("the page title is {string}")
+    public void thePageTitleIs(String arg0) {
+        MatcherAssert.assertThat(homePage.getTitle().contains(arg0), Matchers.is(true));
     }
 
     @When("I type {string} in the search bar")
@@ -42,7 +38,7 @@ public class HomePageSteps {
 
     @Then("I see case studies")
     public void iSeeCaseStudies() {
-        Assertions.assertTrue(insightsPage.areSearchResultsVisible());
+        MatcherAssert.assertThat(insightsPage.areSearchResultsVisible().getAccessibleName(),Matchers.containsString("HSBC"));
     }
 
     @And("I click the services tab")

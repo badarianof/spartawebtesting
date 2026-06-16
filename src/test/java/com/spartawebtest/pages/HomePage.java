@@ -18,4 +18,8 @@ public class HomePage extends PageObject {
     public void clickServices(){getDriver().findElement(By.buttonText("Services")).click();}
     public void clickCapabilityBuild(){getDriver().findElement(By.buttonText("Capability Build")).click();}
     public void clickAISkillsAccelerator(){getDriver().findElement(By.buttonText("AI Skills Accelerator")).click();}
+    public void clickBecomeASpartan(){getDriver().findElement(By.buttonText("Become a Spartan")).click();}
+    public void clickCommunity(){getDriver().findElement(By.buttonText("Community")).click();}
+    public void clickExForces(){getDriver().findElement(By.buttonText("Ex-Forces")).click();}
 }
+

@@ -9,6 +9,9 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/InsightsSteps.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/insights.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,7 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3Etb4Y0RazNCsEAZ4Z4CYvJe9fv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

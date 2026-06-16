@@ -72,4 +72,9 @@ public class HomePageSteps {
     public void iClickExForces() {
         homePage.clickExForces();
     }
+
+    @When("I click the {string} button")
+    public void iClickTheButton(String arg0) {
+        homePage.clickButton(arg0);
+    }
 }

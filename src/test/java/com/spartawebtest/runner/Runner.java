@@ -1,16 +1,16 @@
 package com.spartawebtest.runner;
 
-import io.cucumber.junit.CucumberOptions;
-import io.cucumber.junit.platform.engine.Cucumber;
-
-import org.junit.runner.RunWith;
+import org.junit.platform.suite.api.ConfigurationParameter;
+import org.junit.platform.suite.api.IncludeEngines;
+import org.junit.platform.suite.api.SelectClasspathResource;
+import org.junit.platform.suite.api.Suite;
 
 import static io.cucumber.core.options.Constants.GLUE_PROPERTY_NAME;
 
-@Cucumber
-/*@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features",glue = "com.spartawebtest",plugin = {"pretty","html:target/cucumber-report.html","json:target/cucumber-report.json"})
-*/
+@Suite
+@IncludeEngines("cucumber")
+@SelectClasspathResource("features")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.spartawebtest.steps")
 public class Runner {
-
+    // This class remains empty; it serves as the entry point for the JUnit 5 test suite.
 }

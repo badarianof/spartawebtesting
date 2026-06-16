@@ -1,22 +1,13 @@
 package com.spartawebtest.steps;
 
 import com.spartawebtest.pages.HomePage;
-import io.cucumber.java.PendingException;
-import io.cucumber.java.en.And;
 import com.spartawebtest.pages.InsightsPage;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.core.Serenity;
-import net.serenitybdd.screenplay.waits.Wait;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
-import com.spartawebtest.utils.*;
-
 import static net.serenitybdd.core.Serenity.getDriver;
-import io.cucumber.java.en.When;
-import org.junit.jupiter.api.Assertions;
 
 public class HomePageSteps {
     private final HomePage homePage = new HomePage();
@@ -41,36 +32,9 @@ public class HomePageSteps {
         MatcherAssert.assertThat(insightsPage.areSearchResultsVisible().getAccessibleName(),Matchers.containsString("HSBC"));
     }
 
-    @And("I click the services tab")
-    public void iClickTheServicesTab() {
-        homePage.clickServices();
-    }
-
-    @When("I click the capability build button")
-    public void iClickTheCapabilityBuildButton() {
-        homePage.clickCapabilityBuild();
-    }
-
     @Then("I am on the {string} page")
     public void iAmOnThePage(String arg0) {
         MatcherAssert.assertThat(getDriver().getCurrentUrl(),Matchers.is(arg0));
-    }
-
-    @And("I click AI Skills Accelerator")
-    public void iClickAISkillsAccelerator() {
-        homePage.clickAISkillsAccelerator();
-    }
-    @And ("I click Become a Spartan")
-    public void iClickBecomeASpartan(){
-        homePage.clickBecomeASpartan();
-    }
-    @And ("I click on Community")
-    public void iClickCommunity(){
-        homePage.clickCommunity();
-    }
-    @And ("I click on Ex-Forces")
-    public void iClickExForces() {
-        homePage.clickExForces();
     }
 
     @When("I click the {string} button")

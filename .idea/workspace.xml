@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b04c7950-7af9-4875-ae76-15167b2001eb" name="Changes" comment="github actions debugging and new compiler plugin in pom xml">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/InsightsSteps.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/utils/helpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/capabilitybuild.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/exforces.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/insights.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/serenity.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/serentity.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/testrunner.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testrunner.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/InsightsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/pages/InsightsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spartawebtest/steps/HomePageSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,9 +68,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: AISkillsAccelerator.executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Feature: capabilitybuild.executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Feature: homepage.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: insights.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: AI Skills page functions normally.executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Scenario: I open the Home Page.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Scenario: View Case Studies.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -62,23 +82,24 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;adam&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging kevin&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Feature: capabilitybuild" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/capabilitybuild.feature" />
+  <component name="RunManager" selected="Cucumber Java.Scenario: View Case Studies">
+    <configuration name="Feature: AISkillsAccelerator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors com.spartawebtest.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity" />
-      <option name="SUGGESTED_NAME" value="Feature: capabilitybuild" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: AISkillsAccelerator" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: insights" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/insights.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity" />
-      <option name="SUGGESTED_NAME" value="Feature: homepage" />
+      <option name="SUGGESTED_NAME" value="Feature: insights" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +129,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: I open the Home Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="7" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
+    <configuration name="Scenario: AI Skills page functions normally" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AISkillsAccelerator.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors com.spartawebtest.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="spartawebtestingproject" />
-      <option name="NAME_FILTER" value="^I open the Home Page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^I open the Home Page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: I open the Home Page" />
+      <option name="NAME_FILTER" value="^AI Skills page functions normally$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^AI Skills page functions normally$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: AI Skills page functions normally" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: View Case Studies" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/insights.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="spartawebtestingproject" />
+      <option name="NAME_FILTER" value="^View Case Studies$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^View Case Studies$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: View Case Studies" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,21 +183,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: View Case Studies" />
+        <item itemvalue="Cucumber Java.Feature: insights" />
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Feature: homepage" />
-        <item itemvalue="Cucumber Java.Feature: capabilitybuild" />
-        <item itemvalue="Cucumber Java.Scenario: I open the Home Page" />
+        <item itemvalue="Cucumber Java.Scenario: AI Skills page functions normally" />
+        <item itemvalue="Cucumber Java.Feature: AISkillsAccelerator" />
       </list>
     </recent_temporary>
   </component>
